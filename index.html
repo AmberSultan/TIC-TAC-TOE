@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Josefin+Sans&family=PT+Sans:ital@0;1&family=Poppins:ital,wght@0,300;1,600&family=Quicksand:wght@300&family=Roboto:wght@300&family=Skranji&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="../images/tic.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TIC-TAC-TOE</title>
+</head>
+<body>
+    <div class="typewriter">
+        <h1 >TIC TAC TOE GAME</h1>
+    </div>
+
+    <p class="rules">  First Player starts as   <span style="font-weight: 800;font-size: larger; color: rgb(100, 4, 4);"> Player X </span>
+        And Second Player as <span style="font-weight: 800;font-size: larger;  color: blue;">Player 0</span> 
+  </p> 
+
+
+    <div class="game">
+        <div class="row">
+            <input type="text" id="b1" class="cell b1" onclick="myfunc();" readonly>
+            <input type="text" id="b2" class="cell b2" onclick=" myfunc();" readonly>
+            <input type="text" id="b3" class="cell b3" onclick="myfunc();" readonly>
+        </div>
+        <div class="row">
+            <input type="text" id="b4" class="cell b4" onclick=" myfunc();" readonly>
+            <input type="text" id="b5" class="cell b5" onclick=" myfunc();" readonly>
+            <input type="text" id="b6" class="cell b6" onclick=" myfunc();" readonly>
+        </div>
+        <div class="row">
+            <input type="text" id="b7" class="cell b7" onclick=" myfunc();" readonly>
+            <input type="text" id="b8" class="cell b8" onclick=" myfunc();" readonly>
+            <input type="text" id="b9" class="cell b9" onclick=" myfunc();" readonly>
+        </div>
+    </div>
+
+    <br>
+    <button class="btn" id="btn" >RESET</button>
+    <br><br>
+    <p class="won" id="won"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
